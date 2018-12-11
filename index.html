@@ -1,380 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lynx Security LLC</title>
+	<meta name="description" content="Identify, isolate, assess, and mitigate vulnerabilities with Lynx Security's comprehensive penetration-testing. Begin the hunt for vulnerabilities today!" />
+	<meta name="keywords" content="Penetration testing,security,Minneapolis,Corben Leo,sxcurity,Corben,hacker,hacking,bug bounty, bounty,bugs,intrusion" />
+	<meta name="author" content="Lynx Security LLC" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Identify, isolate, assess, and mitigate vulnerabilities with Lynx Security's comprehensive penetration-testing. Begin the hunt for vulnerabilities today!">
-    <meta name="keywords" content="Penetration testing,security,minneapolis,Corben Leo,sxcurity">
-    <meta name="author" content="Lynx Security LLC">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    
-    <title>Lynx Security LLC</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon.png" />
 
-    <link href='https://fonts.googleapis.com/css?family=Rubik|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap & Plugins CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Custom CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
 
-    <!-- Plugin CSS -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="vendor/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="vendor/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-    <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
+<body>
 
-    <link href="css/lynx.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">
+	<!-- ***** Preloader Start ***** -->
+	<div class="preloader-wrapper">
+		<div class="loader">
+			<div class="loader-inner"></div>
+		</div>
+	</div>
+	<!-- ***** Preloader End ***** -->
 
-      $(window).on('load',function() { 
-        $("#status").delay(500).fadeOut("slow"); 
-        $("#loader").delay(1000).fadeOut(); 
-      })
-      
-      </script>
-      <style>
-      #loader  {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #fefefe;
-      z-index: 99;
-      height: 100%;
-      }  
 
-      #status  {
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        background-image: url(img/load.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: -100px 0 0 -100px;
-        }
+	<!-- ***** Header Area Start ***** -->
+	<header class="header-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="" class="logo">
+							<img src="assets/images/header-black.png" alt="Lynx" width="130px" />
+						</a>
+						<!-- ***** Logo End ***** -->
 
-      </style>
-      <script>
-          function onSubmit(token) {
-            document.getElementById("invisible-recaptcha-form").submit();
-          }
-        </script>
-        
-  </head>
-  <body id="page-top">
-    <div id="loader">
-        <div id="status"></div>
-    </div>          
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img class="img-fluid" src="img/agency/header-logo.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
-          Menu
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.corben.io/archives/" target="_blank" rel="noreferrer noopener">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Masthead -->
-    <header class="masthead" style="background-image: url('img/agency/dark-b.png');">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-12 my-auto text-center text-white">
-            <img class="masthead-img img-fluid mb-3" src="img/agency/notext-lynx.png" alt="">
-            <div class="masthead-title">Lynx Security</div>
-            <hr class="colored">
-          </div>
-        </div>
-      </div>
-      <div class="scroll-down">
-        <a class="btn js-scroll-trigger" href="#about">
-          <i class="fa fa-angle-down fa-fw"></i>
-        </a>
-      </div>
-    </header>
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav">
+							<li><a href="#welcome">Home</a></li>
+							<li class="submenu">
+								<a href="javascript:;">Discover</a>
+								<ul>
+									<li><a href="#goals">Goals</a></li>
+									<li><a href="#testimonials">Testimonials</a></li>
+									<li><a href="#pricing">Pricing</a></li>
+									<li><a href="#blog">Latests Blogs</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="https://www.corben.io/archives">Blog</a>
+							</li>
+							<li><a href="contact.html" class="btn-nav-line"><span>Free Quote</span></a></li>
+						</ul>
+						<a class='menu-trigger'>
+							<span>Menu</span>
+						</a>
+						<!-- ***** Menu End ***** -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** Header Area End ***** -->
 
-    <!-- About Section -->
-    <section class="page-section bg-light" id="about">
-      <div class="container-fluid">
-        <div class="wow fadeIn text-center">
-          <h1>What is Lynx Security?</h1>
-          <p class="mb-0">Lynx Security is a security company devoted to performing <b>white-box</b> and <b>black-box</b> audits in order to accomplish 4 important goals:</p>
-        </div>
-        <br><hr class="colored"><br>
-        <div class="row text-center">
-          <div class="col-lg-3 col-md-6">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
-              <i style="color:#DAD85F" class="fa fa-bug fa-4x"></i>
-              <h3>Identify</h3>
-              <p class="mb-0">Identify vulnerabilities in web applications and software.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
-              <i style="color:#5FB5DA" class="fa fa-search-plus fa-4x"></i>
-              <h3>Isolate</h3>
-              <p class="mb-0">Isolate vulnerabilities and determine the root causes.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
-              <i style="color:#DA5F5F" class="fa fa-exclamation-triangle fa-4x"></i>
-              <h3>Assess</h3>
-              <p class="mb-0">Assess and determine the impacts of vulnerabilities</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
-              <i style="color:#6BDA5F" class="fa fa-check-circle fa-4x"></i>
-              <h3>Mitigate</h3>
-              <p class="mb-0">Mitigate vulnerabilities by creating and deploying proper patches.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br><br><br>    <br><br><br>
-    </section>
-    <!-- Pricing -->
 
-    <section class="page-section pricing py-5 bluegr" id="pricing">
-            <div class="container">
-                <div class="wow fadeIn text-center">
-                    <h1>PRICING</h1>
-                    <br>
-                  </div>          
-              <div class="row">
-                <!-- Start-Up -->
-                <div class="col-lg-4">
-                  <div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
-                        <h5 class="text-uppercase text-center card-title">Venture</h5>
-                        <hr>
-                        <h6 class="card-price text-center">$2,500+</h6>
-                      <ul>
-                        <li id="pricingInfo">10 hours of vulnerability discovery</li>
-                        <li id="pricingInfo">Professional Pentest report</li>
-                        <li id="pricingInfo">Thorough Patch Tests</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Plus Tier -->
-                <div class="col-lg-4">
-                  <div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
-                        <h5 class="text-uppercase text-center card-title">Stalk</h5>
-                        <hr>
-                        <h6 class="card-price text-center">$5,000+</h6>
-                        <ul>
-                            <li id="pricingInfo">20 hours of vulnerability discovery</li>
-                            <li id="pricingInfo">Professional Pentest report</li>
-                            <li id="pricingInfo">Thorough Patch Tests</li>
-                          </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Pro Tier -->
-                <div class="col-lg-4">
-                  <div class="card">
-                    <div class="card-body">
-                        <h5 class="text-uppercase text-center card-title">Pounce</h5>
-                        <hr>
-                        <h6 class="card-price text-center">$10,000+</h6>
-                        <ul>
-                            <li id="pricingInfo">40 hours of vulnerability discovery</li>
-                            <li id="pricingInfo">Professional Pentest report</li>
-                            <li id="pricingInfo">Thorough Patch Tests</li>
-                          </ul>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br><br><br><br><br>
-          </section>
-    <!-- Team Section -->
-    <section class="page-section bg-light" id="">
-      <div class="container text-center wow fadeIn">
-        <h2>Our Team</h2>
-        <p class="mb-0"><b>Corben Leo</b></p>
-        <p>Security Consultant</p>
-        <ul class="list-inline list-team-social">
-          <li class="list-inline-item">
-            <a href="https://www.corben.io/archives/" target="_blank" rel="noreferrer noopener">
-              <i class="fa fa-globe fa-fw"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/hacker_" target="_blank" rel="noreferrer noopener">
-              <i class="fa fa-twitter fa-fw"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/corben-leo/" target="_blank" rel="noreferrer noopener">
-              <i class="fa fa-linkedin fa-fw"></i>
-            </a>
-          </li>
-        </ul>
-        <hr class="colored">
-        <div class="team-carousel owl-carousel owl-theme mt-4">
+	<!-- ***** Welcome Area Start ***** -->
+	<div class="welcome-area" id="welcome">
+		<!-- ***** Header Background Image & Particles Start ***** -->
+		<div id="particles-js"></div>
+		<!-- ***** Header Background Image & ParticlesEnd ***** -->
 
-          <!-- Team Carousel Item 2 -->
-          <div class="item">
-            <div class="overlaid"></div>
-            <img class="img-fluid" src="img/agency/team/3.jpg" alt="">
-            <div class="team-caption">
-            </div>
-          </div>
-          <div class="item" style="width:170%">
-            <p class="boutme">
-              I am a security analyst and bug bounty hunter
-              specializing in web application security. I am familiar with programming
-              in Python, Bash, PHP, C, as well as front-end development (Javascript, HTML, and CSS).
-              I have disclosed vulnerabilities in a multiplex of companies including
-              Google, Microsoft, Apple, Yahoo!, AT&amp;T, the Department of Defense, ASUS, Nike, National Cyber Security Center (Netherlands),
-              and over 25 additional companies. I currently have <font color="#C92B2B"><b>11</b></font> CVE's assigned to my discoveries.
-            </p>
-          </div>
+		<div class="header-bg">
+			<img src="assets/images/header-bg.svg" class="img-fluid" alt="">
+		</div>
 
-        </div>
-      </div>
-    </section>
+		<!-- ***** Header Text Start ***** -->
+		<div class="header-text">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-12 col-sm-12">
+						<h1 id="main"><a>Lynx Security</a></h1>
+						<p>Identify, isolate, assess, and mitigate vulnerabilities with Lynx Security's comprehensive
+							penetration-testing. Begin
+							the hunt for vulnerabilities today!</p>
+						<div class="email-box">
+							<div class="input">
+								<button onclick="location.href='contact.html';">Get a quote</button>
+							</div>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Header Text End ***** -->
 
-      <!-- Client Section -->
-      <section class="page-section bluegr" id="testimonials">
-        <div class="container text-center wow fadeIn">
-          <h2 style="color:#D0D0D0;">Testimonials</h2>
-          <hr class="colored">
-          <div class="portfolio-grid clearfix" id="portfolioList">
-  
-            <!-- Grid Item 1 -->
-        <div class="testimonial-wrap">
-        <div class="testimonial-image">
-        <br>
-        <a href="https://streamlabs.com/" target="_blank" rel="noopener noreferrer">
-        <img style="border-radius: 15%;" src="img/agency/streamlabs_logo.png" alt="">
-        </a>
-        </div>
-        <div class="testimonial">
-        <p>"[Lynx Security] has been extremely effective at helping us find and patch security vulnerabilities on Streamlabs. Would recommend [them] highly if you'd like to get your app / software tested and made more secure. It was a pleasure working with [them]."</p>
-        </div></div>
-      </section>
-    <!-- Portfolio Grid Section -->
-    <section class="page-section bg-light" id="work">
-      <div class="container text-center wow fadeIn">
-        <h2>Research</h2>
-        <hr class="colored">
-        <i><p>Here are some vulnerabilities we have discovered and helped remediate.</p></i>
-        <br>
-        <div class="portfolio-grid clearfix" id="portfolioList">
+		<!-- ***** Play Button Start ***** -->
+		<!-- ***** Play Button End ***** -->
+	</div>
+	<!-- ***** Welcome Area End ***** -->
 
-          <!-- Grid Item 1 -->
-          <div class="released">
-          <a href="/releases/XSS%20to%20Account%20Takeover%20in%20Cozy%20Cloud.pdf" target="_blank" rel="noopener noreferrer">
-          <div class="" title="Cozy Cloud">
-            <div class="portfolio-wrapper">
-              <img style="border-radius: 15%;" src="img/agency/portfolio/grid/grid-2.jpg" alt="">
-              <p>XSS to Account Takeover<br>in Cozy Cloud</p>
-          </div>
-          </div>
-        </a>
-        </div>
-          <!-- Grid Item 2 -->
-          <div class="released">
-          <a href="/releases/Local%20File%20Disclosure%20in%20Marked2.pdf" target="_blank" rel="noopener noreferrer">
-          <div class="" title="Marked2">
-            <div class="portfolio-wrapper">
-              <img style="border-radius: 15%;" src="img/agency/portfolio/grid/grid-1.png" alt=""><br>
-              <p>Local File Disclosure<br>in Marked2</p>
-          </div>
-          </div>
-        </a>
-        </div>
-      </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section class="page-section bg-inverse" id="contact">
-      <div class="container wow fadeIn">
-        <div class="text-center">
-          <h2 style="color:white">Contact Us</h2>
-          <hr class="colored">
-          <br>
-        <form id="contact-form" action="https://usebasin.com/f/1eab8c8773f8" enctype="multipart/form-data" method="POST" autocomplete="off" class="contactme">
-            <input autocomplete="off" name="name" type="text" style="height:35px;" id="name-input" placeholder="Name" class="form-control" style="width:20%;" required/><br/>
-            <input autocomplete="off" name="email" type="email" style="height:35px;" id="email-input" placeholder="Email" class="form-control" style="width:20%;" required/><br/>
-            <textarea id="description-input" rows="3" placeholder="Message"  name="comment" class="form-control" required>Message</textarea><br/>
-            <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
-            <button type="submit" class="btn btn-lg" style="margin-top:20px;">Submit</button>
-      </form><br><br>
-            </div>
-        <div class="row mt-4">
-          <div class="col-lg-8 mx-auto">
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="bg-inverse">
-        <div class="footer">
-            <i class="fa fa-twitter" style="color:white"></i>&nbsp;<a href="https://twitter.com/lynxsecurityllc" target="_blank" rel="noreferrer noopener">@lynxsecurityllc</a>&nbsp;&nbsp;
-            <i class="fa fa-envelope" style="color:white"></i>&nbsp;&nbsp<a href="">contact[at]lynxsecurity.io</a>&nbsp;&nbsp;
-            <i class="fa fa-linkedin-square" style="color:white"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/lynxsecurity-llc/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-        </div>        
+	<!-- ***** Goals Start ***** -->
+	<section class="section white padding-bottom-90" id="goals">
+		<div class="bg-top"></div>
+		<div class="bg-bottom"></div>
+		<div class="container">
+			<!-- ***** Section Title Start ***** -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="center-heading">
+						<h2 class="section-title">Our Goals</h2>
+					</div>
+				</div>
+				<div class="offset-lg-3 col-lg-6">
+					<div class="center-text">
+						<p>Lynx Security is devoted to performing white-box and black-box
+							audits in order to accomplish 4
+							important goals.</p>
+					</div>
+				</div>
+			</div>
+			<!-- ***** Section Title End ***** -->
 
-    </footer>
+			<div class="row">
+				<!-- ***** Features Small Item Start ***** -->
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+					<a class="features-small-item">
+						<div class="icon">
+							<i class="fa fa-bug"></i>
+						</div>
+						<h5 class="features-title">Identify</h5>
+						<p>Identify vulnerabilities in web applications and software.</p>
+					</a>
+					<div class="item-bg"></div>
+				</div>
+				<!-- ***** Features Small Item End ***** -->
 
-    
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+				<!-- ***** Features Small Item Start ***** -->
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+					<a class="features-small-item active">
+						<div class="icon">
+							<i class="fa fa-search-plus"></i>
+						</div>
+						<h5 class="features-title">Isolate</h5>
+						<p>Isolate each vulnerability and determine the root cause.</p>
+					</a>
+					<div class="item-bg"></div>
+				</div>
+				<!-- ***** Features Small Item End ***** -->
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="vendor/owl-carousel/owl.carousel.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/vide/jquery.vide.min.js"></script>
-    <script src="vendor/mixitup/mixitup.min.js"></script>
-    <script src="vendor/wowjs/wow.min.js"></script>
+				<!-- ***** Features Small Item Start ***** -->
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+					<a class="features-small-item">
+						<div class="icon">
+							<i class="fa fa-exclamation-triangle"></i>
+						</div>
+						<h5 class=" features-title">Assess</h5>
+						<p>Assess and determine the impact of each vulnerability.</p>
+					</a>
+					<div class="item-bg"></div>
+				</div>
+				<!-- ***** Features Small Item End ***** -->
 
-    <!-- Contact form JavaScript -->
-    <script src="js/contact_me.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
+				<!-- ***** Features Small Item Start ***** -->
+				<div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
+					<a class="features-small-item">
+						<div class="icon">
+							<i class="fa fa-check-circle"></i>
+						</div>
+						<h5 class="features-title">Mitigate</h5>
+						<p>Mitigate vulnerabilities by creating and deploying proper patches.</p>
+					</a>
+					<div class="item-bg"></div>
+				</div>
+				<!-- ***** Features Small Item End ***** -->
+			</div>
+		</div>
+	</section>
+	<!-- ***** Goals End ***** -->
 
-    <!-- Custom scripts for this theme -->
-    <script src="js/vitality.js"></script>
-    <script src="js/mixitup-config.js"></script>
 
-  </body>
+	<!-- ***** Features Big Item Start ***** -->
+	<section class="section padding-bottom-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 align-self-center mobile-bottom-fix" data-scroll-reveal="enter right move 30px over 0.6s after 0.3s">
+					<img src="assets/images/photos/features/nbc_thumbnail.jpg" class="img-fluid float-left rounded-border" alt="App">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+					<div class="left-heading">
+						<h2 class="section-title">Our Team</h2>
+					</div>
+					<div class="left-text">
+						<h5>Corben Leo</h5>
+						<div id="team-links">(
+							<a href="https://www.corben.io/archives/" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe fa-fw"></i></a><a
+							 href="https://twitter.com/hacker_" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter fa-fw"></i></a><a
+							 href="https://www.linkedin.com/in/corben-leo" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin fa-fw"></i></a>
+							)</div>
+						<hr>
+						<p>I am a security analyst and bug bounty hunter
+							specializing in web application security. I am familiar with programming
+							in Python, Bash, Go, PHP, C, as well as front-end development (Javascript, HTML, and CSS).
+							I have disclosed vulnerabilities in a multiplex of companies including
+							Google, Microsoft, Apple, Yahoo!, Verizon Media Group, AT&amp;T, the Department of Defense, ASUS, Nike, National
+							Cyber Security
+							Center
+							(Netherlands),
+							and over 25 additional companies. I currently have <a target="_blank" rel="noopener noreferrer" href="https://www.corben.io/advisories"
+							 id="cves"><b>13
+									CVE's</b></a> assigned to my
+							discoveries.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Features Big Item End ***** -->
+
+
+	<!-- ***** Features Big Item Start ***** -->
+	<section class="section white padding-bottom-100">
+		<div class="bg-top"></div>
+		<div class="bg-bottom"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 align-self-center mobile-bottom-fix">
+					<div class="left-heading">
+						<h2 class="section-title">Top-Tier Findings</h2>
+					</div>
+					<div class="left-text">
+						<p>We strive for excellence and work to find vulnerabilities before malicious actors do. Need examples? Here
+							are some vulnerabilities we helped companies patch:</p>
+						<ul class="findings">
+							<li><a id="link" href="https://hackerone.com/reports/395296" target="_blank" rel="noopener noreferrer">Phone
+									Call to XXE
+									via Interactive Voice Response</a></li>
+							<li><a id="link" href="https://hackerone.com/reports/392859" target="_blank" rel="noopener noreferrer">Server-Side
+									Request Forgery to Internal SMTP Access</a></li>
+							<li><a id="link" href="https://www.corben.io/XSS-to-XXE-in-Prince/" target="_blank" rel="noopener noreferrer">XSS
+									to XXE in Prince v10 and below (CVE-2018-19858)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+					<img src="assets/images/photos/features/lock-cyber.png" class="img-fluid float-right" alt="App">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Features Big Item End ***** -->
+
+	<!-- ***** Testimonials Start ***** -->
+	<section class="section padding-bottom-80" id="testimonials">
+		<div class="container">
+			<!-- ***** Section Title Start ***** -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="center-heading">
+						<h2 class="section-title">Testimonials</h2>
+					</div>
+				</div>
+				<div class="offset-lg-3 col-lg-6">
+					<div class="center-text">
+						<p>Here are some testimonials from our past clients.</p>
+					</div>
+				</div>
+			</div>
+			<!-- ***** Section Title End ***** -->
+
+			<div class="row testimonials-wrapper">
+				<!-- ***** Testimonials Item Start ***** -->
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="testimonials-item">
+						<div class="user">
+							<img src="assets/images/photos/profile/streamlabs.png" alt="">
+						</div>
+						<div class="testimonials-content">
+							<h3 class="user-name">StreamLabs</h3>
+							<div class="txt">
+								<p>"Corben has been extremely effective at helping us find and patch security vulnerabilities on Streamlabs.
+									Would
+									recommend him highly if you'd like to get your app / software tested and made more secure. It was a pleasure
+									working
+									with him."
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ***** Testimonials Item End ***** -->
+			</div>
+		</div>
+	</section>
+	<!-- ***** Testimonials End ***** -->
+
+
+	<!-- ***** Pricing Plans Start ***** -->
+	<section class="section white bg-center-left" id="pricing">
+		<div class="bg-top"></div>
+		<div class="bg-bottom"></div>
+		<div class="container">
+			<!-- ***** Section Title Start ***** -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="center-heading">
+						<h2 class="section-title">Pricing</h2>
+					</div>
+				</div>
+				<div class="offset-lg-3 col-lg-6">
+					<div class="center-text">
+						<p>These are the base prices for the different plans that we offer. Please contact us for a quote.</p>
+					</div>
+				</div>
+			</div>
+			<!-- ***** Section Title End ***** -->
+
+			<div class="row">
+				<!-- ***** Pricing Item Start ***** -->
+				<div class="col-lg-4 col-md-4 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+					<div class="pricing-item">
+						<div class="pricing-header">
+							<h3 class="pricing-title">VENTURE // START-UP</h3>
+							<div class="number">
+								<span>1</span>
+							</div>
+						</div>
+						<div class="pricing-body">
+							<div class="price-wrapper">
+								<span class="currency">$</span>
+								<span class="price">2,500+</span>
+							</div>
+							<ul class="list">
+								<li class="active"><b>8</b> hours of vulnerability discovery</li>
+								<li class="active">Professional Report</li>
+								<li class="active">Thorough Patch Tests</li>
+							</ul>
+						</div>
+						<div class="pricing-footer">
+							<a href="contact.html">Select Plan</a>
+						</div>
+					</div>
+					<div class="item-bg"></div>
+				</div>
+				<!-- ***** Pricing Item End ***** -->
+
+				<!-- ***** Pricing Item Start ***** -->
+				<div class="col-lg-4 col-md-4 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+					<div class="pricing-item active">
+						<div class="pricing-header">
+							<h3 class="pricing-title">STALK // STANDARD</h3>
+							<div class="number">
+								<span>2</span>
+							</div>
+						</div>
+						<div class="pricing-body">
+							<div class="price-wrapper">
+								<span class="currency">$</span>
+								<span class="price">5,000+</span>
+							</div>
+							<ul class="list">
+								<li class="active"><b>20</b> hours of vulnerability discovery</li>
+								<li class="active">Professional Report</li>
+								<li class="active">Thorough Patch Tests</li>
+							</ul>
+						</div>
+						<div class="pricing-footer">
+							<a href="contact.html">Select Plan</a>
+						</div>
+					</div>
+					<div class="item-bg"></div>
+				</div>
+				<!-- ***** Pricing Item End ***** -->
+
+				<!-- ***** Pricing Item Start ***** -->
+				<div class="col-lg-4 col-md-4 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+					<div class="pricing-item">
+						<div class="pricing-header">
+							<h3 class="pricing-title">POUNCE // ENTERPRISE</h3>
+							<div class="number">
+								<span>3</span>
+							</div>
+						</div>
+						<div class="pricing-body">
+							<div class="price-wrapper">
+								<span class="currency">$</span>
+								<span class="price">10,000+</span>
+							</div>
+							<ul class="list">
+								<li class="active"><b>40</b> hours of vulnerability discovery</li>
+								<li class="active">Professional Report</li>
+								<li class="active">Thorough Patch Tests</li>
+							</ul>
+						</div>
+						<div class="pricing-footer">
+							<a href="contact.html">Select Plan</a>
+						</div>
+					</div>
+					<div class="item-bg"></div>
+				</div>
+				<!-- ***** Pricing Item End ***** -->
+			</div>
+		</div>
+	</section>
+	<!-- ***** Pricing Plans End ***** -->
+
+	<!-- ***** Blog Start ***** -->
+	<section class="section bg-center-left" id="blog">
+		<div class="container">
+			<!-- ***** Section Title Start ***** -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="center-heading">
+						<h2 class="section-title">Blog</h2>
+					</div>
+				</div>
+				<div class="offset-lg-3 col-lg-6">
+					<div class="center-text">
+						<p>Read our latest blog posts:</p>
+					</div>
+				</div>
+			</div>
+			<!-- ***** Section Title End ***** -->
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-post-thumb">
+						<h3>
+							<a href="" class="post-0-title">Title</a>
+						</h3>
+						<div class="text post-0">
+							If you're seeing this, javascript may be disabled in your browser.
+						</div>
+						<a href="" class="btn-primary-line post-0-link">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-post-thumb">
+						<h3>
+							<a href="" class="post-1-title">Title</a>
+						</h3>
+						<div class="text post-1">
+							If you're seeing this, javascript may be disabled in your browser.
+						</div>
+						<a href="" class="btn-primary-line post-1-link">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-post-thumb">
+						<h3>
+							<a href="" class="post-2-title">Title</a>
+						</h3>
+						<div class="text post-2">
+							If you're seeing this, javascript may be disabled in your browser.
+						</div>
+						<a href="" class="btn-primary-line post-2-link">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Blog End ***** -->
+
+
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="col-lg-12">
+				<p class="copyright">© Lynx Security LLC. All Rights Reserved.<br>
+					<a href="https://www.facebook.com/lynxsecllc"><i class="fa fa-facebook-square"></i></a>
+					<a href="https://www.twitter.com/lynxsecurityllc"><i class="fa fa-twitter-square"></i></a>
+					<a href="https://www.linkedin.com/company/lynxsecurity-llc/"><i class="fa fa-linkedin-square"></i></a>
+					<a href="https://www.github.com/C0RB3N/"><i class="fa fa-github-square"></i></a>
+
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- ***** Footer End ***** -->
+
+
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery-2.1.0.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Plugins -->
+	<script src="assets/js/scrollreveal.min.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/imgfix.min.js"></script>
+
+	<!-- Global Init -->
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/feednami.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script>
+		particlesJS("particles-js", {
+			"particles": {
+				"number": {
+					"value": 80,
+					"density": {
+						"enable": true,
+						"value_area": 800
+					}
+				},
+				"color": {
+					"value": "#55A62A"
+				},
+				"shape": {
+					"type": "circle",
+					"stroke": {
+						"width": 2,
+						"color": "#55A62A"
+
+					},
+					"polygon": {
+						"nb_sides": 5
+					}
+				},
+				"opacity": {
+					"value": 0.5,
+					"random": false,
+					"anim": {
+						"enable": false,
+						"speed": 1,
+						"opacity_min": 0.1,
+						"sync": false
+					}
+				},
+				"size": {
+					"value": 3,
+					"random": true,
+					"anim": {
+						"enable": false,
+						"speed": 40,
+						"size_min": 0.1,
+						"sync": false
+					}
+				},
+				"line_linked": {
+					"enable": true,
+					"distance": 150,
+					"color": "#FFFFFF",
+					"opacity": .3,
+					"width": 1
+				},
+				"move": {
+					"enable": true,
+					"speed": 6,
+					"direction": "none",
+					"random": false,
+					"straight": false,
+					"out_mode": "out",
+					"bounce": false,
+					"attract": {
+						"enable": false,
+						"rotateX": 600,
+						"rotateY": 1200
+					}
+				}
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+					"onhover": {
+						"enable": false,
+						"mode": "repulse"
+					},
+					"onclick": {
+						"enable": true,
+						//"mode": "push"
+						"mode": "repulse"
+					},
+					"resize": true
+				},
+				"modes": {
+					"grab": {
+						"distance": 400,
+						"line_linked": {
+							"opacity": 1
+						}
+					},
+					"bubble": {
+						"distance": 400,
+						"size": 40,
+						"duration": 2,
+						"opacity": 8,
+						"speed": 3
+					},
+					"repulse": {
+						"distance": 200,
+						"duration": 0.4
+					},
+					"push": {
+						"particles_nb": 4
+					},
+					"remove": {
+						"particles_nb": 2
+					}
+				}
+			},
+			"retina_detect": true
+		});
+	</script>
+	<script>
+		maxLength = 120;
+		titleLen = 40;
+		const url = 'https://www.corben.io/feed.xml'
+		feednami.load(url)
+			.then(feed => {
+				console.log(feed)
+				entry = feed.entries;
+				for (i = 0; i < 3; i++) {
+					var postSummary = entry[i].summary.length > maxLength ?
+						entry[i].summary.substring(0, maxLength - 3) + "..." :
+						entry[i].summary;
+					var title = entry[i].title.length > titleLen ?
+						entry[i].title.substring(0, titleLen - 3) + "..." :
+						entry[i].title;
+					document.getElementsByClassName('post-' + i)[0].innerHTML = postSummary;
+					document.getElementsByClassName('post-' + i + '-title')[0].text = title;
+					document.getElementsByClassName('post-' + i + '-link')[0].href = entry[i].link;
+					console.log(`${entry[i].title}\n${entry[i].link}\n${entry[i].summary}\n`);
+				}
+			});
+	</script>
+</body>
 
 </html>
