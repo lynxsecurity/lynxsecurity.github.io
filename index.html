@@ -623,6 +623,7 @@
 		maxLength = 120;
 		titleLen = 40;
 		const url = 'https://www.corben.io/feed.xml'
+		feednami.setPublicApiKey('3c231bffe6a20812ef398bcbc4e808434049535cf4ff1c7fdfe7260d7b78da37');
 		feednami.load(url)
 			.then(feed => {
 				console.log(feed)
