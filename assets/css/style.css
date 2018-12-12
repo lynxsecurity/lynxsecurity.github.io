@@ -285,7 +285,9 @@ body {
 .section.white {
   background: #fff;
 }
-
+.section-title {
+    text-transform: uppercase;
+}
 .left-heading.light .section-title {
   color: #ffffff;
 }
@@ -300,7 +302,13 @@ body {
   font-family:"Raleway", sans-serif;
   text-transform: uppercase;
 }
+.section-title:hover {
+  text-shadow: 1px 1px #3B566E;
+  -webkit-transition: text-shadow 400ms linear;
+  -ms-transition: text-shadow 400ms linear;
+  transition: text-shadow 400ms linear;
 
+}
 .center-heading {
   text-align: center;
 }
